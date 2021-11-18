@@ -71,9 +71,10 @@ contract YourContract is IMintable, Ownable {
 }
 ```
 
-# `Registration.sol` & `IMX.sol` is for reference purposes if you choose to offer these functions in your own smart contracts and is not needed if you only want to deploy an ERC721.
-
 ### Deploying and verifying registration contract
+
+`Registration.sol` & `IMX.sol` is for reference purposes if you choose to offer these functions in your own smart contracts and is not required if you only want to deploy an ERC721.
+
 
 Deploy to ropsten, change to dev/mainnet if required
 

@@ -3,7 +3,7 @@ name: Publish to NPM
 on:
   push:
     branches:
-      - feature/CD-562-publish-npm-package
+      - main
 
 jobs:
   packages:

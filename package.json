@@ -1,7 +1,10 @@
 {
   "name": "@imtbl/imx-contracts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
+  "files": [
+    "contracts"
+  ],
   "license": "MIT",
   "scripts": {
     "compile": "yarn hardhat compile",

@@ -5,7 +5,7 @@ Installation: `npm install @imtbl/imx-contracts` or `yarn add @imtbl/imx-contrac
 | Name         | Public Test (Ropsten)                                                                                                         | Production (Mainnet)                                                                                                  |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | Core         | [0x4527be8f31e2ebfbef4fcaddb5a17447b27d2aef](https://ropsten.etherscan.io/address/0x4527be8f31e2ebfbef4fcaddb5a17447b27d2aef) | [0x5FDCCA53617f4d2b9134B29090C87D01058e27e9](https://etherscan.io/address/0x5FDCCA53617f4d2b9134B29090C87D01058e27e9) |
-| Registration | [0x68e6217A0989c5e2CBa95142Ada69bA1cE2cdCA9](https://ropsten.etherscan.io/address/0x68e6217A0989c5e2CBa95142Ada69bA1cE2cdCA9) | [0xB28816338Bcc7Eb4dC1e0c09341076Db0b97f92F](https://etherscan.io/address/0xB28816338Bcc7Eb4dC1e0c09341076Db0b97f92F) |
+| Registration | [0x6C21EC8DE44AE44D0992ec3e2d9f1aBb6207D864](https://ropsten.etherscan.io/address/0x6C21EC8DE44AE44D0992ec3e2d9f1aBb6207D864) | [0x72a06bf2a1CE5e39cBA06c0CAb824960B587d64c](https://etherscan.io/address/0x72a06bf2a1CE5e39cBA06c0CAb824960B587d64c) |
 
 # L2 Minting
 
@@ -71,8 +71,14 @@ contract YourContract is IMintable, Ownable {
 }
 ```
 
+`Registration.sol` & `IMX.sol` is for reference purposes if you choose to offer these functions in your own smart contracts and is not required if you only want to deploy an ERC721.
+
+
 ### Manually verifying registration contract
 
+
+Deploy to ropsten, change to dev/mainnet if required
+=======
 Verification with Etherscan should happen automatically within a few minutes of contract deployment, but if it fails you can run it manually, eg
 
 ```

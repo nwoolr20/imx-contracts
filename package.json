@@ -9,7 +9,7 @@
   "scripts": {
     "compile": "yarn hardhat compile",
     "test": "yarn hardhat test",
-    "simple-deploy-ropsten": "yarn hardhat run deploy/simple_asset.js --network ropsten",
+    "simple-deploy-ropsten": "yarn hardhat run deploy/asset.ts --network ropsten",
     "deploy-registration": "yarn hardhat run deploy/registration.ts"
   },
   "dependencies": {

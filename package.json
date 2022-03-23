@@ -9,6 +9,7 @@
   "scripts": {
     "compile": "yarn hardhat compile",
     "test": "yarn hardhat test",
+    "simple-deploy-dev": "yarn hardhat run deploy/asset.ts --network dev",
     "simple-deploy-ropsten": "yarn hardhat run deploy/asset.ts --network ropsten",
     "deploy-registration": "yarn hardhat run deploy/registration.ts"
   },

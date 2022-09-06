@@ -2,6 +2,8 @@ export function getIMXAddress(network: string) {
     switch (network) {
         case 'dev':
             return '0x3e6e01355bB66925a65D372bf9c9f3835d9964fA';
+        case 'sandbox':
+            return '0x7917eDb51ecD6CdB3F9854c3cc593F33de10c623';
         case 'ropsten':
             return '0x4527be8f31e2ebfbef4fcaddb5a17447b27d2aef';
         case 'mainnet':

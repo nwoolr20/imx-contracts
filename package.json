@@ -11,7 +11,8 @@
     "test": "yarn hardhat test",
     "simple-deploy-dev": "yarn hardhat run deploy/asset.ts --network dev",
     "simple-deploy-ropsten": "yarn hardhat run deploy/asset.ts --network ropsten",
-    "deploy-registration": "yarn hardhat run deploy/registration.ts"
+    "deploy-registration": "yarn hardhat run deploy/registration.ts",
+    "generate-random-key": "ts-node scripts/generateRandomKey.ts"
   },
   "dependencies": {
     "@nomiclabs/hardhat-etherscan": "^2.1.4",
@@ -26,6 +27,7 @@
     "@types/mocha": "^9.0.0",
     "chai": "^4.2.0",
     "ethereum-waffle": "^3.0.0",
+    "ethereumjs-wallet": "^1.0.2",
     "ethers": "^5.0.0",
     "hardhat": "^2.4.1",
     "ts-node": "^10.8.1",

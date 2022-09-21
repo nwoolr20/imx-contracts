@@ -49,7 +49,7 @@ In the test environment, deploying an ERC721 contract which is compatible with I
 - `ETHERSCAN_API_KEY`
   - which can be obtained from [your Etherscan account.](https://etherscan.io/myapikey)
 
-Then, just run `yarn hardhat run deploy/asset.ts --network ropsten`.
+Then, just run `yarn hardhat run deploy/asset.ts --network sandbox`.
 
 ### Basic Usage
 
@@ -104,10 +104,9 @@ contract YourContract is IMintable, Ownable {
 
 ### Manually verifying registration contract
 
+First, deploy to sandbox as described in the [L2 Minting](#l2-minting) section. Change to mainnet if required.
 
-Deploy to ropsten, change to dev/mainnet if required
-=======
-Verification with Etherscan should happen automatically within a few minutes of contract deployment, but if it fails you can run it manually, eg
+Verification with Etherscan should happen automatically within a few minutes of contract deployment, but if it fails you can run it manually, e.g.
 
 ```
 yarn hardhat verify --network <network> <address> <args used in deployment>

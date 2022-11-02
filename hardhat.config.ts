@@ -21,10 +21,6 @@ module.exports = {
       url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_GOERLI_API_KEY}`,
       accounts: [`0x${process.env.DEPLOYER_TESTNET_PRIVATE_KEY}`],
     },    
-    ropsten: {
-      url: `https://eth-ropsten.alchemyapi.io/v2/${process.env.ALCHEMY_ROPSTEN_API_KEY}`,
-      accounts: [`0x${process.env.DEPLOYER_TESTNET_PRIVATE_KEY}`],
-    },
     mainnet: {
       url: `https://eth-mainnet.alchemyapi.io/v2/${process.env.ALCHEMY_MAINNET_API_KEY}`,
       accounts: [`0x${process.env.DEPLOYER_MAINNET_PRIVATE_KEY}`],

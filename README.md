@@ -16,7 +16,6 @@ yarn add @imtbl/imx-contracts
 
 | Environment/Network       | Core (StarkEx Bridge) Contract                                                                                                | User Registration Contract                                                                                                    |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| **Public Test (Ropsten)** | [0x4527be8f31e2ebfbef4fcaddb5a17447b27d2aef](https://ropsten.etherscan.io/address/0x4527be8f31e2ebfbef4fcaddb5a17447b27d2aef) | [0x6c21ec8de44ae44d0992ec3e2d9f1abb6207d864](https://ropsten.etherscan.io/address/0x6C21EC8DE44AE44D0992ec3e2d9f1aBb6207D864) |
 | **Sandbox (Goerli)**      | [0x7917edb51ecd6cdb3f9854c3cc593f33de10c623](https://goerli.etherscan.io/address/0x7917eDb51ecD6CdB3F9854c3cc593F33de10c623)  | [0x1c97ada273c9a52253f463042f29117090cd7d83](https://goerli.etherscan.io/address/0x1C97Ada273C9A52253f463042f29117090Cd7D83)  |
 | **Production (Mainnet)**  | [0x5fdcca53617f4d2b9134b29090c87d01058e27e9](https://etherscan.io/address/0x5FDCCA53617f4d2b9134B29090C87D01058e27e9)         | [0x72a06bf2a1CE5e39cBA06c0CAb824960B587d64c](https://etherscan.io/address/0x72a06bf2a1CE5e39cBA06c0CAb824960B587d64c)         |
 
@@ -53,7 +52,7 @@ Then, just run `yarn hardhat run deploy/asset.ts --network sandbox`.
 
 ### Basic Usage
 
-If you're starting from scratch, simply deploy a new instance of `Asset.sol` and you'll have an L2-mintable ERC721 contract. Set the `_imx` parameter in the contract constructor to either the `Public Test` or `Production` addresses as above.
+If you're starting from scratch, simply deploy a new instance of `Asset.sol` and you'll have an L2-mintable ERC721 contract. Set the `_imx` parameter in the contract constructor to either the `Sandbox` or `Production` addresses as above.
 
 If you already have an ERC721 contract written, simply add `Mintable.sol` as an ancestor, implement the `_mintFor` function with your internal mint function, and set up the constructor as above:
 

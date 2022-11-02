@@ -10,7 +10,7 @@
     "compile": "yarn hardhat compile",
     "test": "yarn hardhat test",
     "simple-deploy-dev": "yarn hardhat run deploy/asset.ts --network dev",
-    "simple-deploy-ropsten": "yarn hardhat run deploy/asset.ts --network ropsten",
+    "simple-deploy-sandbox": "yarn hardhat run deploy/asset.ts --network sandbox",
     "deploy-registration": "yarn hardhat run deploy/registration.ts",
     "generate-random-key": "ts-node scripts/generateRandomKey.ts"
   },
